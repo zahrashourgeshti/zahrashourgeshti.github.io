@@ -237,97 +237,6 @@
             line-height: 1.8;
         }
         
-        /* Posts Section */
-        .posts {
-            background-color: var(--white);
-        }
-        
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .post-card {
-            background-color: var(--white);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .post-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-        }
-        
-        .post-img {
-            height: 220px;
-            overflow: hidden;
-        }
-        
-        .post-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .post-card:hover .post-img img {
-            transform: scale(1.1);
-        }
-        
-        .post-content {
-            padding: 1.8rem;
-        }
-        
-        .post-content h3 {
-            margin-bottom: 0.8rem;
-            color: var(--navy);
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-        }
-        
-        .post-meta {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        /* README Section */
-        .readme {
-            background-color: var(--light-gray);
-        }
-        
-        .readme-content {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            line-height: 1.8;
-        }
-        
-        .readme-content h2 {
-            color: var(--navy);
-            margin: 25px 0 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--light-gray);
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .readme-content h3 {
-            color: var(--dark-navy);
-            margin: 20px 0 10px;
-        }
-        
-        .readme-content p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
         .info-box {
             background: #e8f4fd;
             border-left: 4px solid var(--gold);
@@ -344,6 +253,31 @@
             margin: 15px 0;
             overflow-x: auto;
             font-family: 'Courier New', monospace;
+        }
+        
+        /* Posts Section */
+        .posts {
+            background-color: var(--white);
+            text-align: center;
+        }
+        
+        .posts-placeholder {
+            padding: 60px 20px;
+            background-color: var(--light-gray);
+            border-radius: 10px;
+            border: 2px dashed var(--gold);
+        }
+        
+        .posts-placeholder i {
+            font-size: 3rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+        
+        .posts-placeholder h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+            margin-bottom: 1rem;
         }
         
         /* Contact Section */
@@ -461,31 +395,6 @@
             line-height: 1.8;
         }
         
-        .social-links {
-            display: flex;
-            gap: 1.2rem;
-            margin-top: 1.5rem;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
-            text-decoration: none;
-            transition: background-color 0.3s;
-            font-size: 1.2rem;
-        }
-        
-        .social-links a:hover {
-            background-color: var(--gold);
-            color: var(--dark-navy);
-        }
-        
         .footer-bottom {
             text-align: center;
             margin-top: 4rem;
@@ -527,10 +436,6 @@
             .hero-content p {
                 font-size: 1.2rem;
             }
-            
-            .posts-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -547,7 +452,6 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Posts</a></li>
-                    <li><a href="#">README</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -559,102 +463,51 @@
         <div class="hero-content">
             <h2>Exploring Neuroscience & Biology</h2>
             <p>Welcome to my academic journey through the fascinating world of brain science and life sciences</p>
-            <a href="#readme" class="btn">Learn More</a>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section about">
+    <section id="about" class="section about">
         <h2 class="section-title">About Me</h2>
         <div class="about-container">
             <div class="about-img">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Zahra Shourgeshti">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Profile Image">
             </div>
             <div class="about-content">
-                <h3>Hello! I'm Zahra Shourgeshti</h3>
+                <h3>Hello!</h3>
                 <p>I am a high school student passionate about biology, neuroscience, and related fields. My journey in science is driven by curiosity and a deep desire to understand the complexities of life and the human brain.</p>
-                <p>Through HippoPlus, I aim to share my learning journey, research insights, and connect with others who share similar interests in the scientific community.</p>
-                <p>I believe that sharing knowledge and collaborating with others is essential for scientific progress, and I'm excited to contribute to this process.</p>
+                
+                <h3>Purpose of This Website</h3>
+                <p>The purpose of creating this website is to deepen my knowledge, share my learning journey, and connect with people who share similar interests.</p>
+                
+                <div class="info-box">
+                    <p><strong>Note:</strong> The projects and notes I publish here reflect parts of my learning path and personal experiences.</p>
+                </div>
+                
+                <h3>Collaboration and Suggestions</h3>
+                <p>I would be grateful for any suggestions, feedback, or resources that could help me grow and learn more.</p>
+                
+                <h3>Scientific Journey</h3>
+                <p>This scientific journey is just the beginning for me, but I hope to take greater steps alongside others and contribute to the promotion of science.</p>
+                
+                <h3>Contact Information</h3>
+                <p>You can reach me via email:</p>
+                <div class="code-block">
+                    zshourgeshti@gmail.com
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Posts Section -->
     <section class="section posts">
-        <h2 class="section-title">Recent Posts</h2>
-        <div class="posts-grid">
-            <div class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1554475900-0e035b3e5f12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Neuroscience Research">
-                </div>
-                <div class="post-content">
-                    <h3>Understanding Neural Pathways</h3>
-                    <div class="post-meta">
-                        <span><i class="far fa-calendar"></i> Oct 15, 2023</span>
-                        <span><i class="far fa-folder"></i> Neuroscience</span>
-                    </div>
-                    <p>Exploring how neural pathways form and change in response to experiences and learning.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-            
-            <div class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Molecular Biology">
-                </div>
-                <div class="post-content">
-                    <h3>DNA Transcription Process</h3>
-                    <div class="post-meta">
-                        <span><i class="far fa-calendar"></i> Oct 10, 2023</span>
-                        <span><i class="far fa-folder"></i> Biology</span>
-                    </div>
-                    <p>An in-depth look at the molecular mechanisms behind DNA transcription and gene expression.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-            
-            <div class="post-card">
-                <div class="post-img">
-                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Brain Research">
-                </div>
-                <div class="post-content">
-                    <h3>Neuroplasticity: Rewiring the Brain</h3>
-                    <div class="post-meta">
-                        <span><i class="far fa-calendar"></i> Oct 5, 2023</span>
-                        <span><i class="far fa-folder"></i> Neuroscience</span>
-                    </div>
-                    <p>How the brain's ability to reorganize itself impacts learning, memory, and recovery from injury.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- README Section -->
-    <section id="readme" class="section readme">
-        <h2 class="section-title">README</h2>
-        <div class="readme-content">
-            <h2>About This Project</h2>
-            <p>Hello! My name is Zahra Shourgeshti, and I am a high school student passionate about biology, neuroscience, and related fields.</p>
-            
-            <h2>Purpose of This Repository</h2>
-            <p>The purpose of creating this repository is to deepen my knowledge, share my learning journey, and connect with people who share similar interests.</p>
-            
-            <div class="info-box">
-                <p><strong>Note:</strong> The projects and notes I publish here reflect parts of my learning path and personal experiences.</p>
-            </div>
-            
-            <h2>Collaboration and Suggestions</h2>
-            <p>I would be grateful for any suggestions, feedback, or resources that could help me grow and learn more.</p>
-            
-            <h2>Scientific Journey</h2>
-            <p>This scientific journey is just the beginning for me, but I hope to take greater steps alongside others and contribute to the promotion of science.</p>
-            
-            <h2>Contact Information</h2>
-            <p>You can reach me via email:</p>
-            <div class="code-block">
-                zshourgeshti@gmail.com
-            </div>
+        <h2 class="section-title">Posts</h2>
+        <div class="posts-placeholder">
+            <i class="fas fa-feather-alt"></i>
+            <h3>Content Coming Soon</h3>
+            <p>I'm currently working on some exciting research and articles that will be published here soon.</p>
+            <p>Check back later for updates!</p>
         </div>
     </section>
 
@@ -669,11 +522,6 @@
                 <div class="contact-detail">
                     <i class="fas fa-envelope"></i>
                     <span>zshourgeshti@gmail.com</span>
-                </div>
-                
-                <div class="contact-detail">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Neuroscience & Biology Researcher</span>
                 </div>
             </div>
             
@@ -707,23 +555,6 @@
             <div class="footer-section">
                 <h3>HippoPlus</h3>
                 <p>Exploring the fascinating worlds of neuroscience and biology through research, articles, and shared learning.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Posts</a></li>
-                    <li><a href="#">README</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
             </div>
             
             <div class="footer-section">
@@ -734,7 +565,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2023 HippoPlus By Zahra Shourgeshti. All rights reserved.</p>
+            <p>&copy; 2025 HippoPlus. All rights reserved.</p>
         </div>
     </footer>
 </body>
