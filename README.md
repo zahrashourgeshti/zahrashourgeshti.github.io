@@ -159,7 +159,7 @@
 </head>
 <body>
     <header>
-        <h1>HippoPlus By Zahra Shourgeshti</h1>
+        <h1>ByonPlus By Zahra Shourgeshti</h1>
         <p>README - Project Guide</p>
     </header>
     
@@ -198,7 +198,7 @@
     </div>
     
     <footer>
-        <p>© 2023 HippoPlus By Zahra Shourgeshti. All rights reserved.</p>
+        <p>© 2025 ByonPlus By Zahra Shourgeshti. All rights reserved.</p>
     </footer>
 </body>
 </html>
