@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xaxon | Zahra Shourgeshti </title>
+  <title>Xaxon | Zahra Shourgeshti</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
@@ -193,10 +193,6 @@
       margin-bottom: 2rem;
       font-size: 1.1rem;
       line-height: 1.8;
-      text-transform: lowercase;
-    }
-    .about-content p:first-letter {
-      text-transform: uppercase;
     }
     .mission-box {
       background-color: var(--white);
@@ -308,15 +304,18 @@
     }
     /* Contact */
     .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      display: flex;
+      justify-content: center;
       margin-top: 2rem;
     }
     .contact-info { 
-      padding: 2rem;
+      padding: 3rem;
       background-color: var(--light-gray);
       border-radius: 10px;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
     .contact-info h3 {
       font-family: 'Playfair Display', serif;
@@ -327,39 +326,18 @@
     .contact-info p {
       margin-bottom: 2rem;
       line-height: 1.8;
+      font-size: 1.1rem;
     }
     .contact-detail {
       display: flex;
       align-items: center;
+      justify-content: center;
       margin-bottom: 1rem;
     }
     .contact-detail i {
       margin-right: 1rem;
       color: var(--gold);
       font-size: 1.2rem;
-    }
-    .contact-form {
-      background-color: var(--light-gray);
-      padding: 2.5rem;
-      border-radius: 10px;
-    }
-    .form-group { margin-bottom: 1.5rem; }
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      color: var(--navy);
-    }
-    .form-group input, .form-group textarea {
-      width: 100%;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .form-group textarea {
-      min-height: 150px;
-      resize: vertical;
     }
     /* Footer */
     footer {
@@ -390,7 +368,7 @@
     }
     /* Responsive */
     @media (max-width: 992px) {
-      .about-container, .contact-container {
+      .about-container {
         grid-template-columns: 1fr;
       }
       .episode-content, .post-content {
@@ -458,21 +436,22 @@
         <img src="zar.png" alt="Zahra Shourgeshti">
       </div>
       <div class="about-content">
-        <h3>hello!</h3>
-        <p>i am a high school student passionate about neuroscience and related fields. my journey in science is driven by curiosity and a deep desire to understand the complexities of the human brain.</p>
+        <h3>Hello!</h3>
+        <p>I am a high school student with a deep passion for neuroscience and its related fields. My journey in science is fueled by an insatiable curiosity and a profound desire to understand the intricate complexities of the human brain.</p>
         
-        <h3>purpose of this website</h3>
-        <p>the purpose of creating this website is to deepen my knowledge, share my learning journey, and connect with people who share similar interests.</p>
+        <h3>Purpose of This Website</h3>
+        <p>This platform serves as a space to deepen my knowledge, share my learning journey, and connect with like-minded individuals who share similar interests in the fascinating world of neuroscience.</p>
         
-        <h3>scientific journey</h3>
-        <p>this scientific journey is just the beginning for me, but i hope to take greater steps alongside others and contribute to the promotion of science.</p>
+        <h3>My Scientific Journey</h3>
+        <p>While this scientific exploration is just beginning for me, I aspire to take significant strides alongside others and contribute meaningfully to the advancement and promotion of science.</p>
         
-          <h4>my mission</h4>
-          <p>as a student, i aim to gradually contribute to science by sharing knowledge, fostering scientific curiosity, and building connections within the neuroscience community. i believe that even small contributions can lead to significant advancements in our understanding of the brain.</p>
+        <div class="mission-box">
+          <h4>My Mission</h4>
+          <p>As a dedicated student, I aim to gradually contribute to the scientific community by sharing knowledge, fostering scientific curiosity, and building meaningful connections within the neuroscience field. I firmly believe that even the smallest contributions can lead to substantial advancements in our understanding of the brain and its functions.</p>
         </div>
         
-        <h3>suggestions</h3>
-        <p>i would be grateful for any suggestions, feedback, or resources that could help me grow and learn more about neuroscience.</p>
+        <h3>Collaboration & Suggestions</h3>
+        <p>I welcome any suggestions, feedback, or resources that could support my growth and deepen my understanding of neuroscience. Let's explore this fascinating field together!</p>
       </div>
     </div>
   </section>
@@ -481,7 +460,7 @@
   <section class="section posts" id="posts">
     <h2 class="section-title">Posts</h2>
     <div class="accordion-container" id="posts-container">
-      <!-- 40 accordions for posts will be generated by JavaScript -->
+      <!-- 24 accordions for posts will be generated by JavaScript -->
     </div>
   </section>
 
@@ -489,7 +468,7 @@
   <section class="section podcasts" id="podcasts">
     <h2 class="section-title">Podcasts</h2>
     <div class="accordion-container" id="podcasts-container">
-      <!-- 20 accordions for podcasts will be generated by JavaScript -->
+      <!-- 12 accordions for podcasts will be generated by JavaScript -->
     </div>
   </section>
 
@@ -498,15 +477,14 @@
     <h2 class="section-title">Contact Me</h2>
     <div class="contact-container">
       <div class="contact-info">
-        <h3>get in touch</h3>
-        <p>i'm always interested in connecting with fellow neuroscience enthusiasts, researchers, and educators. feel free to reach out with questions, suggestions, or collaboration ideas!</p>
+        <h3>Get In Touch</h3>
+        <p>I'm always excited to connect with fellow neuroscience enthusiasts, researchers, and educators. Whether you have questions, suggestions, or collaboration ideas, I'd love to hear from you!</p>
         <div class="contact-detail">
           <i class="fas fa-envelope"></i>
           <span>zshourgeshti@gmail.com</span>
         </div>
-        <p>whether you have feedback on my content, want to suggest a research topic, or are interested in collaborating, i'd love to hear from you. as a student passionate about neuroscience, i value every opportunity to learn and grow through connections with others in the field.</p>
+        <p>Your insights and feedback are invaluable to me as I continue my journey in neuroscience. Let's explore the fascinating world of brain science together and push the boundaries of our understanding.</p>
       </div>
-    
     </div>
   </section>
 
@@ -515,17 +493,17 @@
     <div class="footer-container">
       <div class="footer-section">
         <h3>Xaxon</h3>
-        <p> understanding of the human brain and neuroscience</p>
+        <p>Advancing understanding of the human brain through neuroscience research and education.</p>
       </div>
       <div class="footer-section">
-        <h3>contact information</h3>
-        <p>email: zshourgeshti@gmail.com</p>
+        <h3>Contact Information</h3>
+        <p>Email: zshourgeshti@gmail.com</p>
       </div>
       <div class="footer-section">
-        <h3> focus</h3>
-        <p>neuroscience</p>
-        <p></p>
-      
+        <h3>Research Focus</h3>
+        <p>Neuroscience</p>
+        <p>Cognitive Science</p>
+        <p>Neurobiology</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -534,9 +512,9 @@
   </footer>
 
   <script>
-    // Generate 40 post accordions
+    // Generate 24 post accordions
     const postsContainer = document.getElementById('posts-container');
-    for (let i = 1; i <= 40; i++) {
+    for (let i = 1; i <= 24; i++) {
       const accordion = document.createElement('div');
       accordion.className = 'accordion';
       accordion.innerHTML = `
@@ -562,7 +540,7 @@
       postsContainer.appendChild(accordion);
     }
 
-    // Generate 20 podcast accordions
+    // Generate 12 podcast accordions
     const podcastsContainer = document.getElementById('podcasts-container');
     const podcastTitles = [
       "Introduction to Neuroscience",
@@ -576,18 +554,10 @@
       "Sleep and Brain Health",
       "Neuroimaging Techniques",
       "Brain-Computer Interfaces",
-      "Neurological Disorders",
-      "The Social Brain",
-      "Consciousness and Awareness",
-      "Sensory Processing",
-      "Motor Control Systems",
-      "Language and the Brain",
-      "Decision Making Neuroscience",
-      "Neuroethics",
       "Future of Neuroscience"
     ];
     
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 12; i++) {
       const accordion = document.createElement('div');
       accordion.className = 'accordion';
       accordion.innerHTML = `
