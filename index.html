@@ -314,27 +314,55 @@
       align-items: center;
       gap: 5px;
     }
-    .references {
-      background-color: var(--light-gray);
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-top: 1.5rem;
-      border-left: 3px solid var(--gold);
+    /* بخش رفرنس‌های کاملاً بازسازی شده */
+    .references-section {
+      background: linear-gradient(135deg, var(--light-gold) 0%, #f8f6f0 100%);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2.5rem;
+      border: 2px solid var(--gold);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
-    .references h5 {
+    .references-title {
       font-family: 'Playfair Display', serif;
       color: var(--navy);
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--gold);
+      display: inline-block;
     }
-    .references ul {
+    .references-list {
       list-style-type: none;
-      padding-left: 0;
+      padding: 0;
     }
-    .references li {
-      margin-bottom: 0.8rem;
-      font-size: 0.9rem;
-      line-height: 1.5;
+    .reference-item {
+      background: var(--white);
+      margin-bottom: 1.2rem;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .reference-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    .reference-item:last-child {
+      margin-bottom: 0;
+    }
+    .reference-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--dark-gray);
+      margin: 0;
+    }
+    .reference-icon {
+      color: var(--gold);
+      margin-right: 10px;
+      font-size: 1.1rem;
     }
     /* Contact */
     .contact-container {
@@ -430,6 +458,12 @@
       .header-container {
         flex-direction: column;
         gap: 1rem;
+      }
+      .references-section {
+        padding: 1.5rem;
+      }
+      .reference-item {
+        padding: 1rem;
       }
     }
   </style>
@@ -574,12 +608,34 @@
             
             <p>In summary, neuroplasticity demonstrates that the brain is not a static system, as was once believed, but rather a dynamic and adaptable structure. This insight opens new perspectives for learning, therapy, and rehabilitation in neurological conditions.</p>
             
-
-              <p>📚 References</p>
-                <li>Cramer, S. C., Sur, M., Dobkin, B. H., O'Brien, C., Sanger, T. D., ... & Trojan, S. (2011). Principles of experimental neuroplasticity and implications for rehabilitation. Brain, 134(6), 1591–1609.</li>
-                <li>Demarin, V., & Morović, S. (2014). Neuroplasticity. Periodicum biologorum, 116(2), 209–211.</li>
-                <li>Grafman, J. (2000). Conceptualizing functional neuroplasticity. Journal of Communication Disorders, 33(4), 345–356.</li>
-                <li>Trojan, S., & Pokorny, J. (1999). Theoretical aspects of neuroplasticity. Physiological Research, 48(2), 87–97.</li>
+            <!-- بخش رفرنس‌های جدید و بهبود یافته -->
+            <div class="references-section">
+              <h3 class="references-title">📚 References</h3>
+              <ul class="references-list">
+                <li class="reference-item">
+                  <p class="reference-text">
+                    <i class="fas fa-book reference-icon"></i>
+                    Cramer, S. C., Sur, M., Dobkin, B. H., O'Brien, C., Sanger, T. D., ... & Trojan, S. (2011). Principles of experimental neuroplasticity and implications for rehabilitation. Brain, 134(6), 1591–1609.
+                  </p>
+                </li>
+                <li class="reference-item">
+                  <p class="reference-text">
+                    <i class="fas fa-book reference-icon"></i>
+                    Demarin, V., & Morović, S. (2014). Neuroplasticity. Periodicum biologorum, 116(2), 209–211.
+                  </p>
+                </li>
+                <li class="reference-item">
+                  <p class="reference-text">
+                    <i class="fas fa-book reference-icon"></i>
+                    Grafman, J. (2000). Conceptualizing functional neuroplasticity. Journal of Communication Disorders, 33(4), 345–356.
+                  </p>
+                </li>
+                <li class="reference-item">
+                  <p class="reference-text">
+                    <i class="fas fa-book reference-icon"></i>
+                    Trojan, S., & Pokorny, J. (1999). Theoretical aspects of neuroplasticity. Physiological Research, 48(2), 87–97.
+                  </p>
+                </li>
               </ul>
             </div>
             
