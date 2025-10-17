@@ -52,7 +52,7 @@
       align-items: center;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
     
     .logo {
@@ -62,21 +62,30 @@
     
     .logo h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin-left: 10px;
     }
     
     .logo-img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       background-color: var(--gold);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
+    }
+    
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
     }
     
     nav ul {
@@ -85,14 +94,14 @@
     }
     
     nav ul li {
-      margin-left: 1.8rem;
+      margin-left: 1.5rem;
     }
     
     nav ul li a {
       color: var(--white);
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: color 0.3s;
       padding: 0.5rem 0;
       position: relative;
@@ -126,7 +135,7 @@
       justify-content: center;
       text-align: center;
       color: var(--white);
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
     
     .hero-content {
@@ -135,14 +144,14 @@
     
     .hero-content h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.8rem;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
       font-weight: 700;
       line-height: 1.2;
     }
     
     .hero-content p {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 2.5rem;
       max-width: 700px;
       margin-left: auto;
@@ -151,7 +160,7 @@
     
     /* Sections */
     .section {
-      padding: 5rem 2rem;
+      padding: 4rem 1rem;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -161,7 +170,7 @@
       margin-bottom: 3rem;
       color: var(--navy);
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       position: relative;
       padding-bottom: 1rem;
     }
@@ -184,8 +193,8 @@
     
     .about-container {
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 4rem;
+      grid-template-columns: 1fr;
+      gap: 3rem;
       align-items: center;
     }
     
@@ -193,7 +202,7 @@
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      max-width: 400px;
+      max-width: 300px;
       margin: 0 auto;
       aspect-ratio: 1;
       display: flex;
@@ -216,7 +225,7 @@
     .about-content h3 {
       font-family: 'Playfair Display', serif;
       color: var(--navy);
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       margin-bottom: 1.5rem;
       padding-bottom: 0.5rem;
       border-bottom: 2px solid var(--gold);
@@ -225,13 +234,13 @@
     
     .about-content p {
       margin-bottom: 2rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.8;
     }
     
     .mission-box {
       background-color: var(--white);
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       border-left: 5px solid var(--gold);
@@ -242,7 +251,7 @@
       font-family: 'Playfair Display', serif;
       color: var(--navy);
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     
     /* Experience Section */
@@ -277,7 +286,7 @@
     }
     
     .accordion-header {
-      padding: 1.8rem;
+      padding: 1.5rem;
       background-color: var(--light-blue);
       cursor: pointer;
       display: flex;
@@ -293,8 +302,9 @@
     .accordion-header h3 {
       font-family: 'Playfair Display', serif;
       color: var(--navy);
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin: 0;
+      flex: 1;
     }
     
     .accordion-header i {
@@ -313,7 +323,7 @@
     }
     
     .accordion.active .accordion-content {
-      padding: 2rem;
+      padding: 1.5rem;
       max-height: 1000px;
     }
     
@@ -331,7 +341,7 @@
       font-family: 'Playfair Display', serif;
       color: var(--navy);
       margin-bottom: 1rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     
     .post-details p {
@@ -350,6 +360,7 @@
       transition: 0.3s;
       border: 2px solid var(--gold);
       font-size: 0.9rem;
+      cursor: pointer;
     }
     
     .btn:hover { 
@@ -357,37 +368,50 @@
       color: var(--gold); 
     }
     
-    .coming-soon {
-      text-align: center;
-      padding: 2rem;
-      color: var(--navy);
-      font-style: italic;
-    }
-    
-    /* بخش post-meta حذف شده است */
-    
     /* Content Editor Styles */
     .content-editor {
       width: 100%;
-      min-height: 300px;
-      padding: 1.5rem;
+      min-height: 200px;
+      padding: 1rem;
       border: 1px solid #ddd;
       border-radius: 8px;
       background-color: var(--light-gray);
       margin-bottom: 1.5rem;
+      resize: vertical;
+      font-size: 1rem;
     }
     
-    .image-placeholder {
+    .image-upload-container {
       width: 100%;
-      height: 200px;
-      background-color: var(--medium-blue);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
       margin-bottom: 1.5rem;
-      color: var(--navy);
-      font-style: italic;
+    }
+    
+    .image-preview {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 1rem;
+      display: none;
+    }
+    
+    .upload-btn {
+      display: inline-block;
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      border: 2px solid var(--navy);
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    
+    .upload-btn:hover { 
+      background: transparent; 
+      color: var(--navy); 
     }
     
     /* Contact */
@@ -398,7 +422,7 @@
     }
     
     .contact-info { 
-      padding: 3rem;
+      padding: 2rem;
       background-color: var(--light-blue);
       border-radius: 10px;
       max-width: 700px;
@@ -411,13 +435,13 @@
       font-family: 'Playfair Display', serif;
       color: var(--navy);
       margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     
     .contact-info p {
       margin-bottom: 2rem;
       line-height: 1.8;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     
     .contact-detail {
@@ -437,7 +461,7 @@
     footer {
       background-color: var(--dark-navy);
       color: var(--white);
-      padding: 4rem 2rem 2rem;
+      padding: 3rem 1rem 2rem;
     }
     
     .footer-container {
@@ -445,13 +469,13 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 3rem;
+      gap: 2rem;
     }
     
     .footer-section h3 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1.5rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     
     .footer-section p {
@@ -460,69 +484,147 @@
     
     .footer-bottom {
       text-align: center;
-      margin-top: 4rem;
+      margin-top: 3rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     /* Responsive */
-    @media (max-width: 992px) {
-      .about-container {
-        grid-template-columns: 1fr;
+    @media (min-width: 768px) {
+      .header-container {
+        padding: 0 2rem;
       }
       
-      .about-img {
-        max-width: 350px;
+      .logo h1 {
+        font-size: 1.8rem;
+      }
+      
+      .logo-img {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
       }
       
       .hero-content h2 {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
       }
       
       .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+      }
+      
+      .section {
+        padding: 5rem 2rem;
+      }
+      
+      .section-title {
+        font-size: 2.5rem;
+      }
+      
+      .about-container {
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+      }
+      
+      .about-img {
+        max-width: 400px;
+      }
+      
+      .about-content h3 {
+        font-size: 1.8rem;
+      }
+      
+      .about-content p {
+        font-size: 1.1rem;
+      }
+      
+      .mission-box {
+        padding: 2rem;
+      }
+      
+      .mission-box h4 {
+        font-size: 1.5rem;
+      }
+      
+      .accordion-header {
+        padding: 1.8rem;
+      }
+      
+      .accordion-header h3 {
+        font-size: 1.4rem;
+      }
+      
+      .contact-info {
+        padding: 3rem;
+      }
+      
+      .contact-info h3 {
+        font-size: 1.8rem;
+      }
+      
+      .contact-info p {
+        font-size: 1.1rem;
+      }
+      
+      footer {
+        padding: 4rem 2rem 2rem;
       }
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
+      .menu-toggle {
+        display: block;
+      }
+      
       nav ul {
+        display: none;
         flex-direction: column;
-        gap: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--navy);
+        padding: 1rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      nav ul.show {
+        display: flex;
       }
       
       nav ul li {
+        margin: 0.5rem 0;
         margin-left: 0;
       }
       
       .header-container {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      
-      .accordion-header {
-        padding: 1.5rem;
-      }
-      
-      .accordion-header h3 {
-        font-size: 1.2rem;
+        flex-wrap: wrap;
       }
     }
     
     @media (max-width: 576px) {
-      .section {
-        padding: 3rem 1rem;
+      .hero {
+        height: 70vh;
       }
       
       .hero-content h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
       
       .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       
       .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+      }
+      
+      .accordion-header {
+        padding: 1.2rem;
+      }
+      
+      .accordion-header h3 {
+        font-size: 1.1rem;
       }
     }
   </style>
@@ -535,8 +637,11 @@
         <div class="logo-img">H</div>
         <h1>hippoplus | Zahra Shourgeshti</h1>
       </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
-        <ul>
+        <ul id="navMenu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -570,8 +675,10 @@
         <h3>My Scientific Journey</h3>
         <p>While this scientific exploration is just beginning for me, I aspire to take significant strides alongside others and contribute meaningfully to the advancement and promotion of science.As a dedicated student, I aim to gradually contribute to the scientific community by sharing knowledge, fostering scientific curiosity, and building meaningful connections within the neuroscience field. I firmly believe that even the smallest contributions can lead to substantial advancements in our understanding of the brain and its functions.</p>
         
-        <h3>Suggestions</h3>
-        <p>I welcome any suggestions, feedback, or resources that could support my growth and deepen my understanding of neuroscience. Let's explore this fascinating field together!</p>
+        <div class="mission-box">
+          <h4>Suggestions</h4>
+          <p>I welcome any suggestions, feedback, or resources that could support my growth and deepen my understanding of neuroscience. Let's explore this fascinating field together!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -588,7 +695,7 @@
   <section class="section posts" id="posts">
     <h2 class="section-title">Posts</h2>
     <div class="accordion-container" id="posts-container">
-      <!-- 25 accordions for posts will be generated by JavaScript -->
+      <!-- 15 accordions for posts will be generated by JavaScript -->
     </div>
   </section>
 
@@ -638,6 +745,46 @@
   </footer>
 
   <script>
+    // Titles for each section - EDIT THESE TO CHANGE TITLES
+    const experienceTitles = [
+      "Research Internship at NeuroLab",
+      "Brain Awareness Week Volunteer",
+      "Science Fair Project on Memory",
+      "Summer Neuroscience Program",
+      "Independent Study on Neuroplasticity"
+    ];
+    
+    const postTitles = [
+      "Introduction to Brain Anatomy",
+      "The Science of Learning",
+      "Neurotransmitters and Behavior",
+      "Memory Formation Process",
+      "Sleep and Brain Health",
+      "Cognitive Development in Adolescence",
+      "Neural Pathways and Habit Formation",
+      "Brain-Computer Interfaces",
+      "The Emotional Brain",
+      "Neuroplasticity in Action",
+      "Genetics and Brain Disorders",
+      "Meditation and Brain Changes",
+      "Nutrition for Brain Health",
+      "Stress Effects on the Brain",
+      "Future of Neuroscience Research"
+    ];
+    
+    const podcastTitles = [
+      "Understanding Neural Networks",
+      "The Developing Brain",
+      "Consciousness Explained",
+      "Brain Injuries and Recovery",
+      "Neuroethics Discussion",
+      "AI and Neuroscience",
+      "Mental Health and Brain Function",
+      "Sensory Processing",
+      "Language and the Brain",
+      "The Creative Mind"
+    ];
+
     // Generate 5 experience accordions
     const experienceContainer = document.getElementById('experience-container');
     
@@ -646,42 +793,42 @@
       accordion.className = 'accordion';
       accordion.innerHTML = `
         <div class="accordion-header">
-          <h3>Experience #${i}</h3>
+          <h3>${experienceTitles[i-1]}</h3>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="accordion-content">
           <div class="post-content">
-            <div class="image-placeholder">
-              <p>Add Experience Image Here</p>
+            <div class="image-upload-container">
+              <input type="file" id="exp-img-${i}" accept="image/*" style="display: none;">
+              <label for="exp-img-${i}" class="upload-btn">Upload Image</label>
+              <img id="exp-preview-${i}" class="image-preview" src="" alt="Preview">
             </div>
-            <div class="content-editor">
-              <p>Add your experience details here...</p>
-            </div>
+            <textarea class="content-editor" placeholder="Add your experience details here..."></textarea>
           </div>
         </div>
       `;
       experienceContainer.appendChild(accordion);
     }
 
-    // Generate 25 post accordions
+    // Generate 15 post accordions
     const postsContainer = document.getElementById('posts-container');
     
-    for (let i = 1; i <= 25; i++) {
+    for (let i = 1; i <= 15; i++) {
       const accordion = document.createElement('div');
       accordion.className = 'accordion';
       accordion.innerHTML = `
         <div class="accordion-header">
-          <h3>Post #${i}</h3>
+          <h3>${postTitles[i-1]}</h3>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="accordion-content">
           <div class="post-content">
-            <div class="image-placeholder">
-              <p>Add Post Image Here</p>
+            <div class="image-upload-container">
+              <input type="file" id="post-img-${i}" accept="image/*" style="display: none;">
+              <label for="post-img-${i}" class="upload-btn">Upload Image</label>
+              <img id="post-preview-${i}" class="image-preview" src="" alt="Preview">
             </div>
-            <div class="content-editor">
-              <p>Add your post content here...</p>
-            </div>
+            <textarea class="content-editor" placeholder="Add your post content here..."></textarea>
           </div>
         </div>
       `;
@@ -690,40 +837,36 @@
 
     // Generate 10 podcast accordions
     const podcastsContainer = document.getElementById('podcasts-container');
-    const podcastTitles = [
-      "Introduction to Neuroscience",
-      "Neuroplasticity and Brain Adaptation",
-      "The Science of Memory",
-      "Cognitive Functions and the Brain",
-      "Neural Pathways and Learning",
-      "Brain Development Across Lifespan",
-      "Neurotransmitters and Behavior",
-      "The Emotional Brain",
-      "Sleep and Brain Health",
-      "Neuroimaging Techniques"
-    ];
     
     for (let i = 1; i <= 10; i++) {
       const accordion = document.createElement('div');
       accordion.className = 'accordion';
       accordion.innerHTML = `
         <div class="accordion-header">
-          <h3>Episode ${i}: ${podcastTitles[i-1]}</h3>
+          <h3>${podcastTitles[i-1]}</h3>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="accordion-content">
           <div class="post-content">
-            <div class="image-placeholder">
-              <p>Add Podcast Cover Image Here</p>
+            <div class="image-upload-container">
+              <input type="file" id="podcast-img-${i}" accept="image/*" style="display: none;">
+              <label for="podcast-img-${i}" class="upload-btn">Upload Image</label>
+              <img id="podcast-preview-${i}" class="image-preview" src="" alt="Preview">
             </div>
-            <div class="content-editor">
-              <p>Add your podcast description here...</p>
-            </div>
+            <textarea class="content-editor" placeholder="Add your podcast description here..."></textarea>
           </div>
         </div>
       `;
       podcastsContainer.appendChild(accordion);
     }
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    menuToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('show');
+    });
 
     // Accordion functionality
     document.addEventListener('DOMContentLoaded', function() {
@@ -742,6 +885,44 @@
           
           // Toggle current accordion
           accordion.classList.toggle('active');
+        });
+      });
+
+      // Image upload functionality
+      document.querySelectorAll('input[type="file"]').forEach(input => {
+        input.addEventListener('change', function() {
+          const file = this.files[0];
+          if (file) {
+            const reader = new FileReader();
+            const previewId = this.id.replace('img-', 'preview-');
+            const preview = document.getElementById(previewId);
+            
+            reader.addEventListener('load', function() {
+              preview.src = this.result;
+              preview.style.display = 'block';
+            });
+            
+            reader.readAsDataURL(file);
+          }
+        });
+      });
+
+      // Word count functionality (hidden but active)
+      document.querySelectorAll('.content-editor').forEach(textarea => {
+        textarea.addEventListener('input', function() {
+          const words = this.value.trim().split(/\s+/).filter(word => word.length > 0);
+          
+          if (words.length > 1200) {
+            this.value = words.slice(0, 1200).join(' ');
+            alert('Maximum word count reached (1200 words)');
+          }
+        });
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function() {
+          navMenu.classList.remove('show');
         });
       });
     });
