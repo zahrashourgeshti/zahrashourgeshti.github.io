@@ -848,8 +848,8 @@
         </div>
         <div class="accordion-content">
           <div class="post-content">
-            <div class="podcast-image">
-              <img src="${i}.jpg" alt="${podcastTitles[i-1]}" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <div class="image-upload-container">
+              <img id="podcast-img-${i}" class="image-preview" src="${i}.jpg" alt="Podcast Image ${i}" style="display: block;">
             </div>
             <textarea class="content-editor" placeholder="Add your podcast description here..."></textarea>
           </div>
@@ -898,6 +898,7 @@
             reader.addEventListener('load', function() {
               preview.src = this.result;
               preview.style.display = 'block';
+              preview.style.objectFit = 'contain'; // Ensure image is fully visible
             });
             
             reader.readAsDataURL(file);
